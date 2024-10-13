@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+  @apply px-4 py-2 bg-blue-950 text-white flex justify-between items-center w-max;
+}
+
+.btn.btn-primary {
+  @apply bg-blue-500 text-white;
+}
+
+.btn.btn-secondary {
+  @apply bg-blue-200 text-blue-500;
+}
+
+.btn.btn-danger {
+  @apply bg-red-500 text-white;
+}
+
+.btn.btn-success {
+  @apply bg-green-500 text-white;
+}
+
+.btn.btn-warning {
+  @apply bg-yellow-500 text-white;
+}
+
+.btn.btn-info {
+  @apply bg-blue-500 text-white;
+}

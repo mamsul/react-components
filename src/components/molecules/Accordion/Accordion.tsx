@@ -8,6 +8,7 @@ import {
 } from "react";
 import { CaretUpIcon } from "@radix-ui/react-icons";
 import clsx from "clsx";
+import { IAccordionContext, IAccordionItemProps, IAccordionProps } from "./types";
 
 const AccordionContext = createContext<IAccordionContext>({
   selected: null,

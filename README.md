@@ -1,50 +1,34 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Notes
+- node: v20.16.0 
+- pnpm: 9.12.2
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+```bash
+  
+  pnpm install
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+  - DEV:
+      pnpm dev
+      Open port 5173 (http://localhost:5173)
 ```
+    
+## Screenshots
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Accordion
+![App Screenshot](https://github.com/user-attachments/assets/350d4c58-5bca-473d-b93b-eb081d6f2b56)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+#
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Toast
+![App Screenshot](https://github.com/user-attachments/assets/d0e7c452-6e68-4532-8b3e-9112960b7834)
+
+#
+
+Selection (Single and Multiple)
+![App Screenshot](https://github.com/user-attachments/assets/d95bea97-c6fe-46c3-b09a-99b296df465e)
+
+Tabs
+![App Screenshot](https://github.com/user-attachments/assets/1fbf18cc-a233-46a8-b695-c66f4a9dce96)

@@ -6,7 +6,7 @@ import {
   useRef,
   useState,
 } from "react";
-import { CaretUpIcon } from "@radix-ui/react-icons";
+import { CaretDownIcon } from "@radix-ui/react-icons";
 import clsx from "clsx";
 import { IAccordionContext, IAccordionItemProps, IAccordionProps } from "./types";
 
@@ -77,7 +77,7 @@ const DefaultPanel = ({
       onClick={() => setSelected(isOpen ? null : value)}
     >
       <span>{labelText || "-"}</span>
-      <CaretUpIcon
+      <CaretDownIcon
         className={clsx("h-4 w-4 transition-transform", {
           "rotate-180": isOpen,
         })}

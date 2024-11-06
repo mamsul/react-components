@@ -35,7 +35,7 @@ export default function ToastProvider({ children }: IToastProvider) {
   return (
     <ToastContext.Provider value={{ open, close, toasts }}>
       {children}
-      <div className="space-y-2 absolute bottom-4 right-4">
+      <div className="space-y-2 fixed bottom-4 right-4">
         {toasts.map(({ id, message, toastType }) => (
           <Toast
             key={id}

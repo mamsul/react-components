@@ -32,3 +32,9 @@ Selection (Single and Multiple)
 
 Tabs
 ![App Screenshot](https://github.com/user-attachments/assets/1fbf18cc-a233-46a8-b695-c66f4a9dce96)
+
+Bottom Sheet
+![App Screenshot](https://github.com/user-attachments/assets/f0784407-b1c6-4604-a73f-2bb287c5d91d)
+
+Slider
+![App Screenshot](https://github.com/user-attachments/assets/fc03fcaa-79b7-4fc1-8355-5015ff0851fd)

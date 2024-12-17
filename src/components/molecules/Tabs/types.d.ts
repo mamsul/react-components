@@ -7,11 +7,12 @@ interface TabItems {
 interface TabNavigationProps {
   activeKey: string;
   setActiveKey: (key: string) => void;
-  panels: Omit<TabItems, "children">[];
+  panels: Omit<TabItems, 'children'>[];
 }
 
 interface TabsProps {
   items: TabItems[];
   activeKey: string;
   onChange?: (activeKey: string) => void;
+  renderTabItem?: (panel: { key: string; label: string }) => React.ReactNode;
 }
